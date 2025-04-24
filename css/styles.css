@@ -235,6 +235,15 @@ footer {
   }
 }
 
+
+
+.logo-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 .menu-btn {
   display: none;
 }
@@ -284,4 +293,56 @@ footer {
 .boton:hover {
   background-color: #3e5be1;
   transform: scale(1.05);
+}
+
+/* Menú normal para escritorio */
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none; /* Ocultamos el menú móvil en pantallas grandes */
+  }
+}
+/* Sólo en pantallas ≤768px */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; /* ocultas el sidebar original */
+  }
+
+  .mobile-nav {
+    display: flex;                /* barra horizontal */
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-secundario);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    overflow-x: auto;             /* scroll horizontal */
+    white-space: nowrap;
+  }
+
+  .mobile-nav a {
+    flex: 0 0 auto;               /* no se estiran */
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 6px;
+    background-color: var(--color-fondo);
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+
+  .mobile-nav a:hover,
+  .mobile-nav a.active {
+    background-color: var(--color-primario);
+    color: white;
+  }
+}
+
+/* Ocultarlo en escritorio */
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none;
+  }
 }
