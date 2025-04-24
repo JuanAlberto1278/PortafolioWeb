@@ -290,23 +290,39 @@ const translations = {
     translateElement("footer p", "innerHTML", true); // Key 'footer_texto', usa innerHTML
 
     // --- Botón de cambio de idioma ---
-    const toggleButton = document.getElementById("toggleLanguage");
-    if (toggleButton) {
-      toggleButton.textContent = lang === "es" ? "EN" : "ES";
+    const toggleButtonMobile = document.getElementById("toggleLanguage");
+    const toggleButtonDesktop = document.getElementById("toggleLanguageDesktop");
+    if (toggleButtonMobile) {
+      toggleButtonMobile.textContent = lang === "es" ? "EN" : "ES";
+    }
+  
+    if (toggleButtonDesktop) {
+      toggleButtonDesktop.textContent = lang === "es" ? "EN" : "ES";
     }
   };
-
-  // --- Resto de tu script (currentLang, event listener, llamada inicial) ---
-  let currentLang = "es"; // O el idioma por defecto que prefieras
-
-  document
-    .getElementById("toggleLanguage")
-    .addEventListener("click", () => {
-      currentLang = currentLang === "es" ? "en" : "es";
-      setTranslation(currentLang);
-    });
-
-  // Inicializa la traducción al cargar la página
+  
   document.addEventListener("DOMContentLoaded", () => {
+    let currentLang = "es"; // O el idioma por defecto que prefieras
+  
+    // --- Manejar clics en el botón de idioma (móvil) ---
+    const btnMobile = document.getElementById("toggleLanguage");
+    if (btnMobile) {
+      btnMobile.addEventListener("click", () => {
+        currentLang = currentLang === "es" ? "en" : "es";
+        setTranslation(currentLang);
+      });
+    }
+  
+    // --- Manejar clics en el botón de idioma (escritorio) ---
+    const btnDesktop = document.getElementById("toggleLanguageDesktop");
+    if (btnDesktop) {
+      btnDesktop.addEventListener("click", () => {
+        currentLang = currentLang === "es" ? "en" : "es";
+        setTranslation(currentLang);
+      });
+    }
+  
+    // Inicializar la traducción al cargar la página
     setTranslation(currentLang);
   });
+  
