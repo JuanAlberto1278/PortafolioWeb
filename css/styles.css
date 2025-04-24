@@ -1,0 +1,287 @@
+:root {
+  --color-primario: #5271ff;
+  --color-secundario: #ffffff;
+  --color-complementario: #ff9472;
+  --color-fondo: #f9f9f9;
+  --color-texto: #1a1a1a;
+}
+
+body.dark-mode {
+  --color-secundario: #1a1a1a;
+  --color-fondo: #121212;
+  --color-texto: #f9f9f9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+  
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 200px;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 900px;
+  position: fixed;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background: var(--color-secundario);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  color: var(--color-primario);
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+}
+
+.dark-toggle {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  color: var(--color-primario);
+  transition: transform 0.3s;
+}
+
+.dark-toggle:hover {
+  transform: scale(1.2) rotate(20deg);
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--color-texto);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: var(--color-primario);
+  color: #fff;
+}
+
+.section {
+  padding: 40px 20px;
+  /* menos padding */
+  display: flex;
+  justify-content: center;
+}
+
+.contenido {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tarjeta {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+body.dark-mode .tarjeta {
+  background-color: #1e1e1e;
+}
+
+.tarjeta:hover {
+  transform: translateY(-4px);
+}
+
+.tarjeta h2 {
+  color: var(--color-primario);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.color-primario {
+  color: var(--color-primario);
+}
+
+.btn {
+  background: var(--color-primario);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.btn:hover {
+  background: #3e5be1;
+  transform: scale(1.05);
+}
+
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.proyecto {
+  background: #f1f1f1;
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+body.dark-mode .proyecto {
+  background: #242424;
+}
+
+.proyecto:hover {
+  transform: translateY(-5px);
+}
+
+.proyecto h3 {
+  color: var(--color-primario);
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background: var(--color-secundario);
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Header container for the logo and buttons */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Responsive layout for nav */
+@media (min-width: 769px) {
+  nav {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    display: none;
+    background-color: var(--color-secundario);
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+    cursor: pointer;
+    color: var(--color-primario);
+    font-size: 1.8rem;
+  }
+}
+
+.menu-btn {
+  display: none;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: var(--color-secundario);
+  padding: 2rem 1rem;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.sidebar a {
+  color: var(--color-texto);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background-color: var(--color-primario);
+  color: white;
+}
+
+.boton {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-left: 1rem
+}
+
+.boton:hover {
+  background-color: #3e5be1;
+  transform: scale(1.05);
+}
