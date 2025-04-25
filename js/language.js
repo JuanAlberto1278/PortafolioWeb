@@ -233,7 +233,7 @@ const translations = {
     document.title = t.pageTitle || document.title; // Usa el título existente como fallback
 
     // --- Navegación (Usando data-key que ya tenías) ---
-    translateMultipleElements("#navbar a");
+    translateMultipleElements("#navbar a, .mobile-nav a");
 
     // --- Secciones Principales (Usando data-key añadido en HTML) ---
     translateElement("#inicio h2", "textContent"); // Key 'saludo'
