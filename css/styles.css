@@ -25,7 +25,7 @@ body {
   background-color: var(--color-fondo);
   color: var(--color-texto);
   line-height: 1.6;
-  
+
 }
 
 main {
@@ -290,17 +290,6 @@ footer {
   margin-left: 1rem
 }
 
-.boton-wsp {
-  background-color: #25D366;
-  color: white;
-  padding: 10px 18px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-left: 1rem
-}
 
 .boton:hover {
   background-color: #3e5be1;
@@ -310,17 +299,21 @@ footer {
 /* Menú normal para escritorio */
 @media (min-width: 769px) {
   .mobile-nav {
-    display: none; /* Ocultamos el menú móvil en pantallas grandes */
+    display: none;
+    /* Ocultamos el menú móvil en pantallas grandes */
   }
 }
+
 /* Sólo en pantallas ≤768px */
 @media (max-width: 768px) {
   .sidebar {
-    display: none; /* ocultas el sidebar original */
+    display: none;
+    /* ocultas el sidebar original */
   }
 
   .mobile-nav {
-    display: flex;                /* barra horizontal */
+    display: flex;
+    /* barra horizontal */
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
@@ -329,12 +322,14 @@ footer {
     position: sticky;
     top: 0;
     z-index: 999;
-    overflow-x: auto;             /* scroll horizontal */
+    overflow-x: auto;
+    /* scroll horizontal */
     white-space: nowrap;
   }
 
   .mobile-nav a {
-    flex: 0 0 auto;               /* no se estiran */
+    flex: 0 0 auto;
+    /* no se estiran */
     padding: 0.5rem 1rem;
     text-align: center;
     border-radius: 6px;

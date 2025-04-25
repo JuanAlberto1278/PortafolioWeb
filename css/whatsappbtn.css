@@ -1,20 +1,131 @@
 .whatsapp-button {
-    display: inline-flex;
-    align-items: center;
     padding: 10px 16px;
+    margin-bottom: 3px; /* This margin might push the button up or down */
     font-size: 16px;
     font-weight: 600;
     font-family: sans-serif;
     color: #fff;
     background-color: #00e785;
     border: none;
-    border-radius: 50px;
+    border-radius: 60px; /* This will create a pill shape */
     text-decoration: none;
-    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
+
+    /* Add/Modify these for flexbox layout within the <a> */
+    display: inline-flex; /* Makes the link a flex container */
+    align-items: center; /* Vertically centers content (icon and text) */
+    justify-content: center; /* Horizontally centers content (icon and text) */
+
+    /* Optional: Remove default padding/margin from <a> if needed */
+    /* margin: 0; */
+    /* padding: 0; */ /* Be careful with padding here, it's already defined above */
+}
+
+/* Optional: Styles for the outer button container if needed for margin etc. */
+/* We've removed conflicting visual styles from the original .boton-wsp */
+.boton-wsp {
+    margin-top: 25px;
+    /* Remove background, border, and padding that should be on the link */
+    background: none;
+    border: none;
+    padding: 0;
+    /* Keep layout properties if needed to contain the link */
+    cursor: pointer; /* Keep the pointer cursor */
+    display: inline-flex; /* Use flex to contain the link */
+    align-items: center; /* Vertically center the link inside the button */
+    justify-content: center; /* Horizontally center the link inside the button */
   }
   
-  .whatsapp-button:hover {
-    background-color: #00cc75;
+  
+  /* Base styles for all social media links (the <a> tags) */
+  .social-link {
+      padding: 10px 16px; /* Padding inside the button-like link */
+      /* margin-bottom: 3px; /* Uncomment if you want space below each button */
+      margin: 0; /* Remove default margin from <a> */
+      font-size: 16px;
+      font-weight: 600;
+      font-family: sans-serif;
+      color: #fff; /* White text color for icons and text */
+      border: none;
+      border-radius: 60px; /* Makes the link look like a pill */
+      text-decoration: none; /* Removes underline from the link */
+  
+      /* Flexbox for centering content (icon and text) within the link */
+      display: inline-flex;
+      align-items: center; /* Vertically centers the icon and text */
+      justify-content: center; /* Horizontally centers the icon and text group */
   }
   
+  /* Add spacing between the icon and the text */
+  .social-link i {
+      padding-right: 10px;
+      /* Optional: adjust icon size relative to font size */
+      /* font-size: 1.2em; */
+  }
+  
+  
+  /* Modifier classes for specific platform colors */
+  .social-link--whatsapp {
+      background-color: #00e785; /* Or #25D366 */
+  }
+  
+  .social-link--linkedin {
+      background-color: #0A66C2; /* LinkedIn Blue */
+  }
+  
+  .social-link--github {
+      background-color: #181717; /* GitHub Dark Grey */
+  }
+  
+  /* Optional: Hover effect */
+  .social-link:hover {
+      opacity: 0.9;
+  }
+
+  
+.boton-wsp {
+    margin-top: 25px;
+    background-color: #00e785; /* Using the last defined background-color */
+    color: #fff; /* Using the last defined color */
+    border: none;
+    border-radius: 8px; /* Note: The link inside has a 60px border-radius */
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center; /* Centers the <a> vertically within the button */
+    justify-content: center; /* Centers the <a> horizontally within the button */
+    padding: 5px 8px; /* Padding on the button */
+    font-size: 16px; /* Font size on the button (might be overridden by link) */
+    font-weight: 600; /* Font weight on the button (might be overridden by link) */
+    font-family: sans-serif; /* Font family on the button (might be overridden by link) */
+  }
+
+  .boton-lkn {
+    margin-top: 25px;
+    background-color: #0A66C2; /* Using the last defined background-color */
+    color: #fff; /* Using the last defined color */
+    border: none;
+    border-radius: 8px; /* Note: The link inside has a 60px border-radius */
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center; /* Centers the <a> vertically within the button */
+    justify-content: center; /* Centers the <a> horizontally within the button */
+    padding: 5px 8px; /* Padding on the button */
+    font-size: 16px; /* Font size on the button (might be overridden by link) */
+    font-weight: 600; /* Font weight on the button (might be overridden by link) */
+    font-family: sans-serif; /* Font family on the button (might be overridden by link) */
+  }
+
+  .boton-gh {
+    margin-top: 25px;
+    background-color: #181717; /* Using the last defined background-color */
+    color: #fff; /* Using the last defined color */
+    border: none;
+    border-radius: 8px; /* Note: The link inside has a 60px border-radius */
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center; /* Centers the <a> vertically within the button */
+    justify-content: center; /* Centers the <a> horizontally within the button */
+    padding: 5px 8px; /* Padding on the button */
+    font-size: 16px; /* Font size on the button (might be overridden by link) */
+    font-weight: 600; /* Font weight on the button (might be overridden by link) */
+    font-family: sans-serif; /* Font family on the button (might be overridden by link) */
+  }
