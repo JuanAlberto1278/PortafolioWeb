@@ -353,3 +353,34 @@ footer {
     display: none;
   }
 }
+
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;               /* ancho fijo */
+  height: 50px;              /* alto fijo igual al ancho */
+  padding: 0;                /* quita padding extra */
+  background-color: var(--color-primario);
+  color: white;
+  border: none;
+  border-radius: 50%;        /* círculo perfecto */
+  font-size: 24px;           /* ajusta el tamaño de la flecha */
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+
+  display: flex;             /* centrar la flecha */
+  align-items: center;
+  justify-content: center;
+}
+
+#scrollToTop:hover {
+  background-color: #3e5be1;
+}
+
+/* Mostrar el botón cuando se ha hecho scroll */
+#scrollToTop.show {
+  opacity: 1;
+}
