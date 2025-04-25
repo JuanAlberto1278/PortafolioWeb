@@ -1,383 +1,297 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MJ Development</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/whatsappbtn.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="favicon.png" type="image/x-icon" />
-  </head>
 
-  <body>
-    <!-- Navegación -->
-    <div class="sidebar">
-      <div>
-        <nav id="navbar" class="sidebar">
-          <a href="#sobremi" data-key="nav_sobremi">Sobre mí</a>
-          <a href="#habilidadesT" data-key="nav_habilidadesT"
-            >Habilidades Tecnicas</a
-          >
-          <a href="#habilidadesB" data-key="nav_habilidadesB"
-            >Habilidades Blandas</a
-          >
-          <a href="#idiomas" data-key="nav_idiomas">Idiomas</a>
-          <a href="#educacion" data-key="nav_educacion">Educación</a>
-          <a href="#logros" data-key="nav_logros">Logros</a>
-          <a href="#certificaciones" data-key="nav_certificaciones"
-            >Certificaciones</a
-          >
-          <a href="#proyectos" data-key="nav_proyectos">Proyectos</a>
-          <a href="#contacto" data-key="nav_contacto">Contacto</a>
-          <button id="toggleLanguageDesktop" class="boton">EN</button>
-        </nav>
-      </div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MJ Development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/whatsappbtn.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="icon" href="favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- Navegación -->
+  <div class="sidebar">
     <div>
-      <div class="mobile-nav">
+      <nav id="navbar" class="sidebar">
         <a href="#sobremi" data-key="nav_sobremi">Sobre mí</a>
-        <a href="#habilidadesT" data-key="nav_habilidadesT"
-          >Habilidades Técnicas</a
-        >
-        <a href="#habilidadesB" data-key="nav_habilidadesB"
-          >Habilidades Blandas</a
-        >
+        <a href="#habilidadesT" data-key="nav_habilidadesT">Habilidades Tecnicas</a>
+        <a href="#habilidadesB" data-key="nav_habilidadesB">Habilidades Blandas</a>
         <a href="#idiomas" data-key="nav_idiomas">Idiomas</a>
         <a href="#educacion" data-key="nav_educacion">Educación</a>
         <a href="#logros" data-key="nav_logros">Logros</a>
-        <a href="#certificaciones" data-key="nav_certificaciones"
-          >Certificaciones</a
-        >
+        <a href="#certificaciones" data-key="nav_certificaciones">Certificaciones</a>
         <a href="#proyectos" data-key="nav_proyectos">Proyectos</a>
         <a href="#contacto" data-key="nav_contacto">Contacto</a>
-        <button id="toggleLanguage" class="boton">EN</button>
-      </div>
+        <button id="toggleLanguageDesktop" class="boton">EN</button>
+      </nav>
     </div>
+  </div>
+  <div>
+    <div class="mobile-nav">
+      <a href="#sobremi" data-key="nav_sobremi">Sobre mí</a>
+      <a href="#habilidadesT" data-key="nav_habilidadesT">Habilidades Técnicas</a>
+      <a href="#habilidadesB" data-key="nav_habilidadesB">Habilidades Blandas</a>
+      <a href="#idiomas" data-key="nav_idiomas">Idiomas</a>
+      <a href="#educacion" data-key="nav_educacion">Educación</a>
+      <a href="#logros" data-key="nav_logros">Logros</a>
+      <a href="#certificaciones" data-key="nav_certificaciones">Certificaciones</a>
+      <a href="#proyectos" data-key="nav_proyectos">Proyectos</a>
+      <a href="#contacto" data-key="nav_contacto">Contacto</a>
+      <button id="toggleLanguage" class="boton">EN</button>
+    </div>
+  </div>
 
-    <main>
-      <section class="section">
-        <div class="contenido">
-          <div class="tarjeta">
-            <img src="img/logo-light.png" class="logo-img" />
-          </div>
+  <main>
+    <section class="section">
+      <div class="contenido">
+        <div class="tarjeta">
+          <img src="img/logo-light.png" class="logo-img" />
         </div>
-      </section>
-      <section id="sobremi" class="section">
-        <div class="contenido">
-          <div class="tarjeta">
-            <h2 data-key="sobreMi">Sobre mí</h2>
-            <p data-key="sobreMiTexto">
-              Soy Ingeniero en Desarrollo de Software. Cuento con experiencia en
-              desarrollo web utilizando tecnologías como <strong>HTML</strong>,
-              <strong>CSS</strong>, <strong>JavaScript</strong>, y frameworks
-              modernos como <strong>Angular</strong>. Además, tengo
-              conocimientos en desarrollo <strong>Back-End</strong> con
-              <strong>Java</strong> y <strong>C#</strong>.
-            </p>
-          </div>
+      </div>
+    </section>
+    <section id="sobremi" class="section">
+      <div class="contenido">
+        <div class="tarjeta">
+          <h2 data-key="sobreMi">Sobre mí</h2>
+          <p data-key="sobreMiTexto">
+            Soy Ingeniero en Desarrollo de Software. Cuento con experiencia en
+            desarrollo web utilizando tecnologías como <strong>HTML</strong>,
+            <strong>CSS</strong>, <strong>JavaScript</strong>, y frameworks
+            modernos como <strong>Angular</strong>. Además, tengo
+            conocimientos en desarrollo <strong>Back-End</strong> con
+            <strong>Java</strong> y <strong>C#</strong>.
+          </p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="habilidadesT" class="section">
-        <div class="contenido">
-          <div class="tarjeta">
-            <h2 data-key="habilidadesTec">Habilidades Técnicas</h2>
-            <ul>
-              <li data-key="habTec_html">HTML</li>
-              <li data-key="habTec_css">CSS</li>
-              <li data-key="habTec_js">JavaScript</li>
-              <li data-key="habTec_java">Java</li>
-              <li data-key="habTec_angular">Angular</li>
-              <li data-key="habTec_csharp">C#</li>
-            </ul>
-          </div>
+    <section id="habilidadesT" class="section">
+      <div class="contenido">
+        <div class="tarjeta">
+          <h2 data-key="habilidadesTec">Habilidades Técnicas</h2>
+          <ul>
+            <li data-key="habTec_html">HTML</li>
+            <li data-key="habTec_css">CSS</li>
+            <li data-key="habTec_js">JavaScript</li>
+            <li data-key="habTec_java">Java</li>
+            <li data-key="habTec_angular">Angular</li>
+            <li data-key="habTec_csharp">C#</li>
+          </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="habilidadesB" class="section">
-        <div class="contenido">
-          <div class="tarjeta">
-            <h2 data-key="habilidadesBlandas">Habilidades Blandas</h2>
-            <ul>
-              <li data-key="habBlan_equipo">Trabajo en equipo</li>
-              <li data-key="habBlan_problemas">Resolución de problemas</li>
-              <li data-key="habBlan_liderazgo">Liderazgo</li>
-              <li data-key="habBlan_responsabilidad">Responsabilidad</li>
-            </ul>
-          </div>
+    <section id="habilidadesB" class="section">
+      <div class="contenido">
+        <div class="tarjeta">
+          <h2 data-key="habilidadesBlandas">Habilidades Blandas</h2>
+          <ul>
+            <li data-key="habBlan_equipo">Trabajo en equipo</li>
+            <li data-key="habBlan_problemas">Resolución de problemas</li>
+            <li data-key="habBlan_liderazgo">Liderazgo</li>
+            <li data-key="habBlan_responsabilidad">Responsabilidad</li>
+          </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="idiomas" class="section">
-        <div class="contenido">
-          <div class="tarjeta">
-            <h2 data-key="lenguajes">Lenguajes</h2>
-            <ul>
-              <li data-key="idi_espanol"><strong>Español:</strong> Nativo</li>
-              <li data-key="idi_ingles"><strong>Inglés:</strong> Intermedio</li>
-            </ul>
-          </div>
+    <section id="idiomas" class="section">
+      <div class="contenido">
+        <div class="tarjeta">
+          <h2 data-key="lenguajes">Lenguajes</h2>
+          <ul>
+            <li data-key="idi_espanol"><strong>Español:</strong> Nativo</li>
+            <li data-key="idi_ingles"><strong>Inglés:</strong> Intermedio</li>
+          </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="educacion" class="section">
-        <div class="contenido">
-          <div class="tarjeta">
-            <h2 data-key="educacion">Educación</h2>
-            <p data-key="educacionTexto">
-              <strong>Universidad Cenfotec</strong><br />
-              Bachillerato en Ingeniería de Software<br />
-              📅 2023 - 2026<br />
-              📍 San José, Costa Rica
-            </p>
-          </div>
+    <section id="educacion" class="section">
+      <div class="contenido">
+        <div class="tarjeta">
+          <h2 data-key="educacion">Educación</h2>
+          <p data-key="educacionTexto">
+            <strong>Universidad Cenfotec</strong><br />
+            Bachillerato en Ingeniería de Software<br />
+            📅 2023 - 2026<br />
+            📍 San José, Costa Rica
+          </p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="logros" class="section">
-        <div class="contenido">
-          <div class="tarjeta">
-            <h2 data-key="logros">Logros Obtenidos</h2>
-            <ul>
-              <li>
-                <strong data-key="logro_db_titulo"
-                  >Administrador de Base de Datos</strong
-                ><br />
-                <span data-key="logro_db_desc"
-                  >Proyecto grupal sobre una base de datos para un cine.</span
-                >
-              </li>
-              <li>
-                <strong data-key="logro_qa_titulo"
-                  >Aseguramiento de Calidad y Desarrollo Front-End</strong
-                ><br />
-                <span data-key="logro_qa_desc"
-                  >Proyecto grupal: Página de juegos para niños enfocada en
-                  habilidades STEAM.</span
-                >
-              </li>
-              <li>
-                <strong data-key="logro_be_titulo">Desarrollo Back-End</strong
-                ><br />
-                <span data-key="logro_be_desc"
-                  >Proyecto grupal: Aplicación de reseñas de sitios de
-                  vacaciones.</span
-                >
-              </li>
-            </ul>
-          </div>
+    <section id="logros" class="section">
+      <div class="contenido">
+        <div class="tarjeta">
+          <h2 data-key="logros">Logros Obtenidos</h2>
+          <ul>
+            <li>
+              <strong data-key="logro_db_titulo">Administrador de Base de Datos</strong><br />
+              <span data-key="logro_db_desc">Proyecto grupal sobre una base de datos para un cine.</span>
+            </li>
+            <li>
+              <strong data-key="logro_qa_titulo">Aseguramiento de Calidad y Desarrollo Front-End</strong><br />
+              <span data-key="logro_qa_desc">Proyecto grupal: Página de juegos para niños enfocada en
+                habilidades STEAM.</span>
+            </li>
+            <li>
+              <strong data-key="logro_be_titulo">Desarrollo Back-End</strong><br />
+              <span data-key="logro_be_desc">Proyecto grupal: Aplicación de reseñas de sitios de
+                vacaciones.</span>
+            </li>
+          </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="certificaciones" class="section">
-        <div class="contenido">
-          <div class="tarjeta">
-            <h2 data-key="certificaciones">Certificaciones</h2>
-            <ul>
-              <li>
-                <strong data-key="cert_ti_titulo"
-                  >Certificación Técnico de TI</strong
-                ><br />
-                <span data-key="cert_ti_desc"
-                  >Instituto Nacional del Aprendizaje — 2020<br />📍 San José,
-                  Costa Rica</span
-                >
-              </li>
-              <li>
-                <strong data-key="cert_scrum_titulo">Certificación Scrum</strong
-                ><br />
-                <span data-key="cert_scrum_desc">ScrumStudy — 2023</span>
-              </li>
-            </ul>
-          </div>
+    <section id="certificaciones" class="section">
+      <div class="contenido">
+        <div class="tarjeta">
+          <h2 data-key="certificaciones">Certificaciones</h2>
+          <ul>
+            <li>
+              <strong data-key="cert_ti_titulo">Certificación Técnico de TI</strong><br />
+              <span data-key="cert_ti_desc">Instituto Nacional del Aprendizaje — 2020<br />📍 San José,
+                Costa Rica</span>
+            </li>
+            <li>
+              <strong data-key="cert_scrum_titulo">Certificación Scrum</strong><br />
+              <span data-key="cert_scrum_desc">ScrumStudy — 2023</span>
+            </li>
+          </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="proyectos" class="section">
-        <div class="contenido">
-          <div class="tarjeta">
-            <h2 data-key="proyectos">Proyectos</h2>
-            <div class="proyectos-grid">
-              <div class="proyecto">
-                <a
-                  href="https://github.com/JuanAlberto1278/Cenfomon2023"
-                  target="_blank"
-                >
-                  <img
-                    src="img/cenfomon.jpg"
-                    alt="Proyecto 1"
-                    style="width: 100%; border-radius: 10px"
-                  />
-                </a>
-                <h3 data-key="proj1_titulo">Cenfomon</h3>
-                <p data-key="proj1_desc">
-                  Pequeño juego basado en el juego Pokémon
-                </p>
-              </div>
-              <div class="proyecto">
-                <a
-                  href="https://github.com/EnvisionaryTech/MindMat_FrontEnd"
-                  target="_blank"
-                >
-                  <img
-                    src="img/mindmat.jpg"
-                    alt="Proyecto 2"
-                    style="width: 100%; border-radius: 10px"
-                  />
-                </a>
-                <h3 data-key="proj2_titulo">Mindmat</h3>
-                <p data-key="proj2_desc">
-                  Página de juegos basada en el modelo de Aprendizaje STEAM,
-                  diseñada especialmente para niños
-                </p>
-              </div>
-              <div class="proyecto">
-                <a
-                  href="https://github.com/JuanAlberto1278/Simecid2024"
-                  target="_blank"
-                >
-                  <img
-                    src="img/simecid.jpg"
-                    alt="Proyecto 3"
-                    style="width: 100%; border-radius: 10px"
-                  />
-                </a>
-                <h3 data-key="proj3_titulo">Simecid</h3>
-                <p data-key="proj3_desc">
-                  Simulación de Programa de Citas Médicas
-                </p>
-              </div>
-              <div class="proyecto">
-                <a
-                  href="https://github.com/JuanAlberto1278/Componentes2024"
-                  target="_blank"
-                >
-                  <img
-                    src="img/database.jpg"
-                    alt="Proyecto 4"
-                    style="width: 100%; border-radius: 10px"
-                  />
-                </a>
-                <h3 data-key="proj4_titulo">Base de datos simple</h3>
-                <p data-key="proj4_desc">
-                  Pequeño proyecto de gestión de tareas, usando una base de
-                  datos para pruebas
-                </p>
-              </div>
+    <section id="proyectos" class="section">
+      <div class="contenido">
+        <div class="tarjeta">
+          <h2 data-key="proyectos">Proyectos</h2>
+          <div class="proyectos-grid">
+            <div class="proyecto">
+              <a href="https://github.com/JuanAlberto1278/Cenfomon2023" target="_blank">
+                <img src="img/cenfomon.jpg" alt="Proyecto 1" style="width: 100%; border-radius: 10px" />
+              </a>
+              <h3 data-key="proj1_titulo">Cenfomon</h3>
+              <p data-key="proj1_desc">
+                Pequeño juego basado en el juego Pokémon
+              </p>
+            </div>
+            <div class="proyecto">
+              <a href="https://github.com/EnvisionaryTech/MindMat_FrontEnd" target="_blank">
+                <img src="img/mindmat.jpg" alt="Proyecto 2" style="width: 100%; border-radius: 10px" />
+              </a>
+              <h3 data-key="proj2_titulo">Mindmat</h3>
+              <p data-key="proj2_desc">
+                Página de juegos basada en el modelo de Aprendizaje STEAM,
+                diseñada especialmente para niños
+              </p>
+            </div>
+            <div class="proyecto">
+              <a href="https://github.com/JuanAlberto1278/Simecid2024" target="_blank">
+                <img src="img/simecid.jpg" alt="Proyecto 3" style="width: 100%; border-radius: 10px" />
+              </a>
+              <h3 data-key="proj3_titulo">Simecid</h3>
+              <p data-key="proj3_desc">
+                Simulación de Programa de Citas Médicas
+              </p>
+            </div>
+            <div class="proyecto">
+              <a href="https://github.com/JuanAlberto1278/Componentes2024" target="_blank">
+                <img src="img/database.jpg" alt="Proyecto 4" style="width: 100%; border-radius: 10px" />
+              </a>
+              <h3 data-key="proj4_titulo">Base de datos simple</h3>
+              <p data-key="proj4_desc">
+                Pequeño proyecto de gestión de tareas, usando una base de
+                datos para pruebas
+              </p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="contacto" class="section">
-        <div class="contenido">
-          <div class="tarjeta">
-            <h2 data-key="contacto">Contacto</h2>
-            <div class="cv-buttons">
-              <a href="assets/cv/cv-es.pdf" download="CV_JuanAlberto_ES.pdf" class="btn">
-                Descargar CV (ES)
-              </a>
-              <a href="assets/cv/cv-en.pdf" download="CV_JuanAlberto_EN.pdf" class="btn">
-                Download CV (EN)
-              </a>
+    <section id="contacto" class="section">
+      <div class="contenido">
+        <div class="tarjeta">
+          <h2 data-key="contacto">Contacto</h2>
+          <div class="cv-buttons">
+            <a href="assets/cv/cv-es.pdf" download="CV_JuanAlberto_ES.pdf" class="btn">
+              Descargar CV (ES)
+            </a>
+            <a href="assets/cv/cv-en.pdf" download="CV_JuanAlberto_EN.pdf" class="btn">
+              Download CV (EN)
+            </a>
+          </div>
+          <form id="contactForm" action="https://formspree.io/f/mldbrvqz" method="POST">
+            <div style="display: flex; flex-direction: column; gap: 1rem">
+              <input data-key="form_nombre" type="text" name="nombre" placeholder="Tu nombre" required style="
+                    padding: 0.7rem;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                  " />
+              <input data-key="form_email" type="email" name="email" placeholder="Tu correo electrónico" required style="
+                    padding: 0.7rem;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                  " />
+              <textarea data-key="form_mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required
+                style="
+                    padding: 0.7rem;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                  "></textarea>
+              <button type="submit" class="btn" data-key="enviar">
+                Enviar mensaje
+              </button>
             </div>
-            <form
-              id="contactForm"
-              action="https://formspree.io/f/mldbrvqz"
-              method="POST"
-            >
-              <div style="display: flex; flex-direction: column; gap: 1rem">
-                <input
-                  data-key="form_nombre"
-                  type="text"
-                  name="nombre"
-                  placeholder="Tu nombre"
-                  required
-                  style="
-                    padding: 0.7rem;
-                    border-radius: 8px;
-                    border: 1px solid #ccc;
-                  "
-                />
-                <input
-                  data-key="form_email"
-                  type="email"
-                  name="email"
-                  placeholder="Tu correo electrónico"
-                  required
-                  style="
-                    padding: 0.7rem;
-                    border-radius: 8px;
-                    border: 1px solid #ccc;
-                  "
-                />
-                <textarea
-                  data-key="form_mensaje"
-                  name="mensaje"
-                  rows="5"
-                  placeholder="Escribe tu mensaje..."
-                  required
-                  style="
-                    padding: 0.7rem;
-                    border-radius: 8px;
-                    border: 1px solid #ccc;
-                  "
-                ></textarea>
-                <button type="submit" class="btn" data-key="enviar">
-                  Enviar mensaje
-                </button>
-              </div>
-            </form>
-            <button class="boton-wsp">
-              <a
-                  href="https://wa.me/50670351980?text="
-                  target="_blank"
-                  class="social-link social-link--whatsapp"
-              >
-                  <i class="fa fa-whatsapp"></i> Whatsapp
-              </a>
+          </form>
+          <button class="boton-wsp">
+            <a href="https://wa.me/50670351980?text=" target="_blank" class="social-link social-link--whatsapp">
+              <i class="fa fa-whatsapp"></i> Whatsapp
+            </a>
           </button>
-          
+
           <button class="boton-lkn">
-              <a
-                  href="https://www.linkedin.com/in/juan-alberto-mora-valverde-09028422b/" target="_blank"
-                  class="social-link social-link--linkedin"
-              >
-                  <i class="fa fa-linkedin"></i> LinkedIn
-              </a>
+            <a href="https://www.linkedin.com/in/juan-alberto-mora-valverde-09028422b/" target="_blank"
+              class="social-link social-link--linkedin">
+              <i class="fa fa-linkedin"></i> LinkedIn
+            </a>
           </button>
-          
+
           <button class="boton-gh">
-              <a
-                  href="https://github.com/JuanAlberto1278" target="_blank"
-                  class="social-link social-link--github"
-              >
-                  <i class="fa fa-github"></i> GitHub
-              </a>
+            <a href="https://github.com/JuanAlberto1278" target="_blank" class="social-link social-link--github">
+              <i class="fa fa-github"></i> GitHub
+            </a>
           </button>
-            <div
-              data-key="mensajeExito"
-              id="mensaje-enviado"
-              style="
+          <div data-key="mensajeExito" id="mensaje-enviado" style="
                 display: none;
                 margin-top: 1rem;
                 color: green;
                 font-weight: bold;
-              "
-            >
-              ¡Mensaje enviado con éxito!
-            </div>
+              ">
+            ¡Mensaje enviado con éxito!
           </div>
         </div>
-      </section>
-    </main>
-    
-    <footer>
-      <p>&copy; 2025 Juan Alberto Mora. Todos los derechos reservados.</p>
-    </footer>
+      </div>
+    </section>
+  </main>
 
-    <script src="js/functions.js"></script>
-    <script src="js/language.js"></script>
-  </body>
+  <footer>
+    <p>&copy; 2025 Juan Alberto Mora. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/functions.js"></script>
+  <script src="js/language.js"></script>
+</body>
+
 </html>
