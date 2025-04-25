@@ -361,3 +361,24 @@ footer {
     display: none;
   }
 }
+
+.cv-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cv-buttons .btn {
+  background: var(--color-primario);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.cv-buttons .btn:hover {
+  background: #3e5be1;
+}
