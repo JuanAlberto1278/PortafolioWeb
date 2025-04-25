@@ -384,3 +384,28 @@ footer {
 .cv-buttons .btn:hover {
   background: #3e5be1;
 }
+
+@media (min-width: 769px) {
+  main {
+    margin-left: 200px; /* deja espacio al sidebar */
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    margin-left: 0; /* sin espacio porque no hay sidebar */
+  }
+
+  .contenido {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .tarjeta {
+    padding: 1rem;
+  }
+
+  .proyectos-grid {
+    grid-template-columns: 1fr;
+  }
+}
