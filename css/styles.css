@@ -311,21 +311,25 @@ footer {
     /* ocultas el sidebar original */
   }
 
-  .mobile-nav {
-    display: flex;
-    /* barra horizontal */
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    background-color: var(--color-secundario);
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    overflow-x: auto;
-    /* scroll horizontal */
-    white-space: nowrap;
+  @media (max-width: 768px) {
+    .mobile-nav {
+      position: fixed;        /* FIJO en la ventana */
+      top: 0;
+      left: 0;
+      width: 100%;            /* Ocupa todo el ancho */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: var(--color-secundario);
+      z-index: 1000;          /* Por encima del contenido */
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    /* Si tienes un contenedor wrapper, aplica ahí el fixed en lugar de .mobile-nav */
   }
+  
 
   .mobile-nav a {
     flex: 0 0 auto;
@@ -345,6 +349,10 @@ footer {
     background-color: var(--color-primario);
     color: white;
   }
+
+  main {
+    padding-top: 70px; /* deja un poco extra para margen */
+  }
 }
 
 /* Ocultarlo en escritorio */
@@ -352,35 +360,4 @@ footer {
   .mobile-nav {
     display: none;
   }
-}
-
-#scrollToTop {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 50px;               /* ancho fijo */
-  height: 50px;              /* alto fijo igual al ancho */
-  padding: 0;                /* quita padding extra */
-  background-color: var(--color-primario);
-  color: white;
-  border: none;
-  border-radius: 50%;        /* círculo perfecto */
-  font-size: 24px;           /* ajusta el tamaño de la flecha */
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 1000;
-
-  display: flex;             /* centrar la flecha */
-  align-items: center;
-  justify-content: center;
-}
-
-#scrollToTop:hover {
-  background-color: #3e5be1;
-}
-
-/* Mostrar el botón cuando se ha hecho scroll */
-#scrollToTop.show {
-  opacity: 1;
 }
